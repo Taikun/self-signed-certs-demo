@@ -24,7 +24,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(response.getvalue())
 
 
-httpd = HTTPServer(('localhost', 4443), SimpleHTTPRequestHandler)
+httpd = HTTPServer(('localhost', 4443), SimpleHTTPRequestHandler) # https://127.0.0.1:4443/
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
